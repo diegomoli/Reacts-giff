@@ -12,12 +12,12 @@ export const useFetchGigs = (category) => {
         getGifs(category)
         .then(imgs=>
             {
-                setTimeout(() => {
-                    setState({
-                        data:imgs,
-                        loading:false
-                    })
-                }, 3000);
+                
+            setState({
+                data:imgs,
+                loading:false
+            })
+                
             });
     }, [category]) //warning(agregar category):React Hook useEffect tiene una dependencia faltante: 'categoría'. Inclúyalo o elimine la matriz de dependencia
 
